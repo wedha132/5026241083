@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(245, 251, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+p {
+    text-align: left;
+}
+
+#namareporter {
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+.publis {
+    text-align: center;
+    font-size: xx-small;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-size: large;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+.agakmasuk {
+    margin-left: 100px;
+}
+
+.gambar {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

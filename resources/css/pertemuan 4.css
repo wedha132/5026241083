@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-section {
+  margin-bottom: 40px;
+}
+
+.text-section h2 {
+  font-weight: bold;
+  color: #001425;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  color: #5d83a4;
+  margin-bottom: 10px;
+}
+
+.feature-box {
+  margin-bottom: 30px;
+}
+
+.feature-box img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-box h5 {
+  color: #001425;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #6e7275;
+  margin-right: 20px;
+}
+
+body { 
+    overflow-x: hidden;
+}
