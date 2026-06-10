@@ -7,6 +7,8 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\BedakController;
+use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\NilaiKuliahController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -99,3 +101,14 @@ Route::post('/bedak', [BedakController::class, 'store'])->name('bedak.store');
 Route::get('/bedak/{kodebedak}/edit', [BedakController::class, 'edit'])->name('bedak.edit');
 Route::put('/bedak/{kodebedak}', [BedakController::class, 'update'])->name('bedak.update');
 Route::delete('/bedak/{kodebedak}', [BedakController::class, 'destroy'])->name('bedak.destroy');
+
+// Route CRUD Latihan EAS Keranjang Belanja D4
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'index'])->name('keranjangbelanja.index');
+Route::get('/keranjangbelanja/create', [KeranjangBelanjaController::class, 'tambah'])->name('keranjangbelanja.create');
+Route::post('/keranjangbelanja', [KeranjangBelanjaController::class, 'store'])->name('keranjangbelanja.store');
+Route::delete('/keranjangbelanja/{id}', [KeranjangBelanjaController::class, 'hapus'])->name('keranjangbelanja.destroy');
+
+// Route CRUD Latihan EAS Nilai KUliah E5
+Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index'])->name('nilaikuliah.index');
+Route::get('/nilaikuliah/create', [NilaiKuliahController::class, 'tambah'])->name('nilaikuliah.create');
+Route::post('/nilaikuliah', [NilaiKuliahController::class, 'store'])->name('nilaikuliah.store');
