@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\BedakController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -91,3 +92,10 @@ Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+Route::get('/bedak', [BedakController::class, 'index'])->name('bedak.index');
+Route::get('/bedak/create', [BedakController::class, 'create'])->name('bedak.create');
+Route::post('/bedak', [BedakController::class, 'store'])->name('bedak.store');
+Route::get('/bedak/{kodebedak}/edit', [BedakController::class, 'edit'])->name('bedak.edit');
+Route::put('/bedak/{kodebedak}', [BedakController::class, 'update'])->name('bedak.update');
+Route::delete('/bedak/{kodebedak}', [BedakController::class, 'destroy'])->name('bedak.destroy');
