@@ -9,6 +9,7 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\BedakController;
 use App\Http\Controllers\KeranjangBelanjaController;
 use App\Http\Controllers\NilaiKuliahController;
+use App\Http\Controllers\EASController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -112,3 +113,8 @@ Route::delete('/keranjangbelanja/{id}', [KeranjangBelanjaController::class, 'hap
 Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index'])->name('nilaikuliah.index');
 Route::get('/nilaikuliah/create', [NilaiKuliahController::class, 'tambah'])->name('nilaikuliah.create');
 Route::post('/nilaikuliah', [NilaiKuliahController::class, 'store'])->name('nilaikuliah.store');
+
+
+Route::get('/eas', [EASController::class, 'index'])->name('eas.index');
+Route::get('/eas/create', [EASController::class, 'create'])->name('eas.create');
+Route::post('/eas', [EASController::class, 'store'])->name('eas.store');
